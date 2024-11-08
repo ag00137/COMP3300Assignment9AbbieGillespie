@@ -21,5 +21,10 @@ namespace COMP3300Assignment9AbbieGillespie
                 accountsData = JsonSerializer.Deserialize<List<BankAccount>>(jsonData);
             }
         }
+
+        private void CheckingAccountBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,7 +33,7 @@ namespace COMP3300Assignment9AbbieGillespie.AccountData
             MonthlyInterestRate = monthlyInterestRate;
         }
 
-        public decimal CalculateMinimumBalanceFee()
+        public virtual decimal CalculateMinimumBalanceFee()
         {
             if (CurrentBalance < 1200)
             {

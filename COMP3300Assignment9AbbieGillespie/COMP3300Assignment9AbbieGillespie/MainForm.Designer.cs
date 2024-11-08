@@ -30,6 +30,7 @@
         {
             ChooseFileBtn = new Button();
             AccountsDisplayTxtBox = new ListBox();
+            CheckingAccountBtn = new Button();
             SuspendLayout();
             // 
             // ChooseFileBtn
@@ -51,11 +52,22 @@
             AccountsDisplayTxtBox.Size = new Size(776, 204);
             AccountsDisplayTxtBox.TabIndex = 1;
             // 
+            // CheckingAccountBtn
+            // 
+            CheckingAccountBtn.Location = new Point(34, 304);
+            CheckingAccountBtn.Name = "CheckingAccountBtn";
+            CheckingAccountBtn.Size = new Size(169, 34);
+            CheckingAccountBtn.TabIndex = 2;
+            CheckingAccountBtn.Text = "Checking Account";
+            CheckingAccountBtn.UseVisualStyleBackColor = true;
+            CheckingAccountBtn.Click += CheckingAccountBtn_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CheckingAccountBtn);
             Controls.Add(AccountsDisplayTxtBox);
             Controls.Add(ChooseFileBtn);
             Name = "MainForm";
@@ -67,5 +79,6 @@
 
         private Button ChooseFileBtn;
         private ListBox AccountsDisplayTxtBox;
+        private Button CheckingAccountBtn;
     }
 }
