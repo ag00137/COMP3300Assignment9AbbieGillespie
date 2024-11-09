@@ -8,7 +8,7 @@ namespace COMP3300Assignment9AbbieGillespie.AccountData
 {
     public class CheckingAccount : BankAccount
     {
-        public CheckingAccount(string ownerName, decimal currentBalance, string monthOpened, string type, decimal monthlyInterestRate) : base(ownerName, currentBalance, monthOpened, type, monthlyInterestRate)
+        public CheckingAccount(string OwnerName, decimal CurrentBalance, string MonthOpened, string Type, decimal MonthlyInterestRate) : base(OwnerName, CurrentBalance, MonthOpened, Type, MonthlyInterestRate)
         {
 
         }

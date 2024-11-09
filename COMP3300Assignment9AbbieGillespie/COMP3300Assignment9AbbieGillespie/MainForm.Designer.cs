@@ -31,6 +31,8 @@
             ChooseFileBtn = new Button();
             AccountsDisplayTxtBox = new ListBox();
             CheckingAccountBtn = new Button();
+            SavingsAccountBtn = new Button();
+            BusinessAcountsBtn = new Button();
             SuspendLayout();
             // 
             // ChooseFileBtn
@@ -49,24 +51,46 @@
             AccountsDisplayTxtBox.ItemHeight = 25;
             AccountsDisplayTxtBox.Location = new Point(12, 62);
             AccountsDisplayTxtBox.Name = "AccountsDisplayTxtBox";
-            AccountsDisplayTxtBox.Size = new Size(776, 204);
+            AccountsDisplayTxtBox.Size = new Size(993, 229);
             AccountsDisplayTxtBox.TabIndex = 1;
             // 
             // CheckingAccountBtn
             // 
-            CheckingAccountBtn.Location = new Point(34, 304);
+            CheckingAccountBtn.Location = new Point(166, 309);
             CheckingAccountBtn.Name = "CheckingAccountBtn";
-            CheckingAccountBtn.Size = new Size(169, 34);
+            CheckingAccountBtn.Size = new Size(183, 35);
             CheckingAccountBtn.TabIndex = 2;
-            CheckingAccountBtn.Text = "Checking Account";
+            CheckingAccountBtn.Text = "Checking Accounts";
             CheckingAccountBtn.UseVisualStyleBackColor = true;
             CheckingAccountBtn.Click += CheckingAccountBtn_Click;
+            // 
+            // SavingsAccountBtn
+            // 
+            SavingsAccountBtn.Location = new Point(417, 310);
+            SavingsAccountBtn.Name = "SavingsAccountBtn";
+            SavingsAccountBtn.Size = new Size(183, 34);
+            SavingsAccountBtn.TabIndex = 3;
+            SavingsAccountBtn.Text = "Savings Accounts";
+            SavingsAccountBtn.UseVisualStyleBackColor = true;
+            SavingsAccountBtn.Click += SavingsAccountBtn_Click;
+            // 
+            // BusinessAcountsBtn
+            // 
+            BusinessAcountsBtn.Location = new Point(670, 310);
+            BusinessAcountsBtn.Name = "BusinessAcountsBtn";
+            BusinessAcountsBtn.Size = new Size(183, 34);
+            BusinessAcountsBtn.TabIndex = 4;
+            BusinessAcountsBtn.Text = "Business Accounts";
+            BusinessAcountsBtn.UseVisualStyleBackColor = true;
+            BusinessAcountsBtn.Click += BusinessAcountsBtn_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1010, 360);
+            Controls.Add(BusinessAcountsBtn);
+            Controls.Add(SavingsAccountBtn);
             Controls.Add(CheckingAccountBtn);
             Controls.Add(AccountsDisplayTxtBox);
             Controls.Add(ChooseFileBtn);
@@ -80,5 +104,7 @@
         private Button ChooseFileBtn;
         private ListBox AccountsDisplayTxtBox;
         private Button CheckingAccountBtn;
+        private Button SavingsAccountBtn;
+        private Button BusinessAcountsBtn;
     }
 }

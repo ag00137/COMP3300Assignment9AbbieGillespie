@@ -10,19 +10,19 @@ namespace COMP3300Assignment9AbbieGillespie.AccountData
     public class BankAccount
     {
         [JsonPropertyName("OwnerName")]
-        public required string OwnerName { get; set; }
+        public string OwnerName { get; set; }
 
         [JsonPropertyName("CurrentBalance")]
-        public required decimal CurrentBalance { get; set; }
+        public decimal CurrentBalance { get; set; }
 
         [JsonPropertyName("MonthOpened")]
-        public required string MonthOpened { get; set; }
+        public string MonthOpened { get; set; }
 
         [JsonPropertyName("Type")]
-        public required string Type { get; set; }
+        public string Type { get; set; }
 
         [JsonPropertyName("MonthlyInterestRate")]
-        public required decimal MonthlyInterestRate { get; set; }
+        public decimal MonthlyInterestRate { get; set; }
 
         public BankAccount(string ownerName, decimal currentBalance, string monthOpened, string type, decimal monthlyInterestRate)
         {
