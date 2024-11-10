@@ -15,11 +15,11 @@ namespace COMP3300Assignment9AbbieGillespie.AccountData
         /// <summary>
         /// Initializes a new instance of the CheckingAccount class.
         /// </summary>
-        /// <param name="OwnerName"></param>
-        /// <param name="CurrentBalance"></param>
-        /// <param name="MonthOpened"></param>
-        /// <param name="Type"></param>
-        /// <param name="MonthlyInterestRate"></param>
+        /// <param name="ownerName">Name of the owner.</param>
+        /// <param name="currentBalance">The current balance.</param>
+        /// <param name="monthOpened">The month opened.</param>
+        /// <param name="type">The type of bank account.</param>
+        /// <param name="monthlyInterestRate">The monthly interest rate.</param>
         public CheckingAccount(string OwnerName, decimal CurrentBalance, string MonthOpened, string Type, decimal MonthlyInterestRate) : base(OwnerName, CurrentBalance, MonthOpened, Type, MonthlyInterestRate)
         {
 
