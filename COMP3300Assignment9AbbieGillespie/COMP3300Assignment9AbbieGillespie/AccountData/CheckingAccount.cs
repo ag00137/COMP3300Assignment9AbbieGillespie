@@ -6,13 +6,31 @@ using System.Threading.Tasks;
 
 namespace COMP3300Assignment9AbbieGillespie.AccountData
 {
+    /// <summary>
+    /// Holds the checking accounts and gets the minimum fee.
+    /// </summary>
+    /// <seealso cref="COMP3300Assignment9AbbieGillespie.AccountData.BankAccount" />
     public class CheckingAccount : BankAccount
     {
+        /// <summary>
+        /// Initializes a new instance of the CheckingAccount class.
+        /// </summary>
+        /// <param name="OwnerName"></param>
+        /// <param name="CurrentBalance"></param>
+        /// <param name="MonthOpened"></param>
+        /// <param name="Type"></param>
+        /// <param name="MonthlyInterestRate"></param>
         public CheckingAccount(string OwnerName, decimal CurrentBalance, string MonthOpened, string Type, decimal MonthlyInterestRate) : base(OwnerName, CurrentBalance, MonthOpened, Type, MonthlyInterestRate)
         {
 
         }
 
+        /// <summary>
+        /// Calculates the minimum balance fee.
+        /// </summary>
+        /// <returns>
+        /// The result of the calculation.
+        /// </returns>
         public override decimal CalculateMinimumBalanceFee()
         {
             if (CurrentBalance < 1200)
@@ -22,6 +40,12 @@ namespace COMP3300Assignment9AbbieGillespie.AccountData
             return base.CalculateMinimumBalanceFee();
         }
 
+        /// <summary>
+        /// Converts to string.
+        /// </summary>
+        /// <returns>
+        /// A string that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             return $"Account Type: Checking - {base.ToString()}";

@@ -10,6 +10,9 @@ namespace COMP3300Assignment9AbbieGillespie
         private List<SavingsAccount> savingsAccounts = new List<SavingsAccount>();
         private List<BusinessAccount> businessAccounts = new List<BusinessAccount>();
 
+        /// <summary>
+        /// Initailizes the component for the form.
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
